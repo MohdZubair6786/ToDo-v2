@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="todo-app">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="styles/todo-list.css">
+</head>
+<body>
+  <div class="todo-app">
+    <h2>ToDo</h2>
+    <div class="todo-input-grid">
+      <input type="text" class="js-name-input name-input" placeholder="ToDo Name" onkeydown="handlekeydown(event)">
+      <input type="date" class="js-due-date-input due-date-input" placeholder="Date" onkeydown="handlekeydown(event)">
+      <input type="time" class="js-time-input time-input" onkeydown="handlekeydown(event)" aria-label="time">
+      <button onclick="addToDo();" 
+      class="add-todo-button">Add</button> 
+    </div>
+    <div class="js-todo-list todo-grid"></div>
+    <a href="https://github.com/MohdZubair6786">GitHub</a>
+  </div>
+    <script src="src/todo-list.js"></script>
+</body>
+</html>
